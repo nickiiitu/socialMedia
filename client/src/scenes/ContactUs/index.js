@@ -72,7 +72,7 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const loggedInResponse = await fetch("http://localhost:5000/contact/", {
+      const loggedInResponse = await fetch("/contact/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
